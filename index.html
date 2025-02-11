@@ -1,78 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shyam Pandey</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function openPopup(id) {
-            document.getElementById(id).style.display = 'block';
-        }
-        function closePopup(id) {
-            document.getElementById(id).style.display = 'none';
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Security Architecture Professional | Modern Solutions for Secure Systems">
+  <title>Shyam Pandey - Security Architect</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Shyam Pandey</h1>
-        <p>Welcome to my personal page!</p>
-    </header>
-    
-    <section id="profile">
-        <img src="your-photo.jpg" alt="Your Photo" class="profile-pic">
-    </section>
-    
-    <section class="tiles">
-        <div class="tile" onclick="openPopup('blogPopup')">
-            <h2>Blog</h2>
-            <p>Read my latest articles.</p>
-        </div>
-        <div class="tile" onclick="openPopup('newsPopup')">
-            <h2>News</h2>
-            <p>Stay updated with my latest news.</p>
-        </div>
-        <div class="tile" onclick="openPopup('contactPopup')">
-            <h2>Contact</h2>
-            <p>Get in touch with me.</p>
-        </div>
-        <div class="tile" onclick="openPopup('certificationsPopup')">
-            <h2>Certifications</h2>
-            <p>See my achievements.</p>
-        </div>
-    </section>
-    
-    <div id="blogPopup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup('blogPopup')">&times;</span>
-            <h2>Blog</h2>
-            <p>Here are my latest blog posts.</p>
-        </div>
+  <header>
+    <div class="container">
+      <h1>Your Name</h1>
+      <p class="tagline">Security Architecture Professional</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    
-    <div id="newsPopup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup('newsPopup')">&times;</span>
-            <h2>News</h2>
-            <p>Latest news updates.</p>
-        </div>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I am a seasoned Security Architect with expertise in designing and implementing secure systems for modern applications. My focus is on ensuring robust security frameworks that protect against evolving threats.</p>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Secure Cloud Migration</h3>
+        <p>Designed and implemented a secure migration strategy for a Fortune 500 company.</p>
+      </div>
+      <div class="project-card">
+        <h3>Zero Trust Architecture</h3>
+        <p>Developed a Zero Trust framework for a financial institution to enhance data security.</p>
+      </div>
+      <div class="project-card">
+        <h3>Threat Modeling</h3>
+        <p>Conducted threat modeling workshops for multiple enterprise clients.</p>
+      </div>
     </div>
-    
-    <div id="contactPopup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup('contactPopup')">&times;</span>
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-        </div>
+  </section>
+
+  <section id="blog" class="container">
+    <h2>Blog</h2>
+    <p>Coming soon! Stay tuned for insights on security architecture, threat modeling, and more.</p>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Let’s connect! Reach out to me via email or LinkedIn.</p>
+    <ul class="social-links">
+      <li><a href="mailto:spandeyjr@outlook.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/spandeyjr/" target="_blank">Linkedin</a></li>
+      <li><a href="https://github.com/spandeyjr/" target="_blank">Github</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
     </div>
-    
-    <div id="certificationsPopup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup('certificationsPopup')">&times;</span>
-            <h2>Certifications</h2>
-            <p>List of my certifications.</p>
-        </div>
-    </div>
+  </footer>
 </body>
 </html>
