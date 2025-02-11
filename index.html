@@ -3,33 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Shyam Pandey</title>
+    <title>Shyam Pandey</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
+    <script>
+        function openPopup(id) {
+            document.getElementById(id).style.display = 'block';
         }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
+        function closePopup(id) {
+            document.getElementById(id).style.display = 'none';
         }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-    </style>
+    </script>
 </head>
 <body>
     <header>
@@ -37,16 +20,59 @@
         <p>Welcome to my personal page!</p>
     </header>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Dedicated Cyber Security Consultant with a passion for enhancing digital safety. Proven expertise in risk assessment, threat mitigation, and security strategy development. Committed to safeguarding businesses by staying ahead of emerging threats. Let's collaborate to strengthen your cyber defenses and protect what matters most.</p>
+    <section id="profile">
+        <img src="your-photo.jpg" alt="Your Photo" class="profile-pic">
     </section>
     
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: spandeyjr@outlook.com</p>
-        <p>LinkedIn: <a href="#">https://www.linkedin.com/in/spandeyjr/</a></p>
-        <p>GitHub: <a href="#">https://github.com/spandeyjr/</a></p>
+    <section class="tiles">
+        <div class="tile" onclick="openPopup('blogPopup')">
+            <h2>Blog</h2>
+            <p>Read my latest articles.</p>
+        </div>
+        <div class="tile" onclick="openPopup('newsPopup')">
+            <h2>News</h2>
+            <p>Stay updated with my latest news.</p>
+        </div>
+        <div class="tile" onclick="openPopup('contactPopup')">
+            <h2>Contact</h2>
+            <p>Get in touch with me.</p>
+        </div>
+        <div class="tile" onclick="openPopup('certificationsPopup')">
+            <h2>Certifications</h2>
+            <p>See my achievements.</p>
+        </div>
     </section>
+    
+    <div id="blogPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('blogPopup')">&times;</span>
+            <h2>Blog</h2>
+            <p>Here are my latest blog posts.</p>
+        </div>
+    </div>
+    
+    <div id="newsPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('newsPopup')">&times;</span>
+            <h2>News</h2>
+            <p>Latest news updates.</p>
+        </div>
+    </div>
+    
+    <div id="contactPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('contactPopup')">&times;</span>
+            <h2>Contact</h2>
+            <p>Email: your.email@example.com</p>
+        </div>
+    </div>
+    
+    <div id="certificationsPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('certificationsPopup')">&times;</span>
+            <h2>Certifications</h2>
+            <p>List of my certifications.</p>
+        </div>
+    </div>
 </body>
 </html>
